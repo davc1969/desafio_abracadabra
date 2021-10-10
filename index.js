@@ -10,7 +10,7 @@ app.listen(PORT, () => {
 })
 
 // Disposición de carpeta assets para archivos estáticos
-app.use("/", express.static(path.join(__dirname, '/public/assets')));
+app.use(express.static(path.join(__dirname, '/public/assets')));
 
 
 app.get("/", (req, res) => {
